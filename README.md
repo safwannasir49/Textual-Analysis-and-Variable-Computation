@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Sedan+SC&pause=1000&color=73AEF7&center=true&random=false&width=435&lines=Hello+!;This+Project+is+Based+Upon+;Data+Extraction;Text+Analysis"/>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Sedan+SC&pause=1000&color=73AEF7&center=true&random=false&width=435&lines=Hello+!;How+are+you%3F+%F0%9F%98%83;This+Project+is+Based+Upon+;Data+Extraction;Text+Analysis"/>
 </h1>
 
  <h1>Textual Analysis and Variable Computation</h1>
