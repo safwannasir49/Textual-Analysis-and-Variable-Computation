@@ -56,19 +56,6 @@
         <li><strong>beautifulsoup4:</strong> For parsing HTML content and extracting article text.</li>
         <li><strong>openpyxl:</strong> For working with Excel files.</li>
     </ul>
-    <h2>Installation</h2>
-    <p>To install the required Python libraries, use the following pip command:</p>
-    <pre class="code-block">
-pip install pandas nltk requests beautifulsoup4 openpyxl
-    </pre>
-    <p>Additionally, download the necessary NLTK resources:</p>
-    <pre class="code-block">
-import nltk
-
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('vader_lexicon')
-    </pre>
 </body>
 </html>
 
