@@ -3,46 +3,7 @@
 </h1>
 
 # Textual Analysis and Variable Computation
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Textual Analysis and Variable Computation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 5px;
-            border-radius: 4px;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 4px;
-            overflow-x: auto;
-        }
-        .code-block {
-            background-color: #272822;
-            color: #f8f8f2;
-            padding: 10px;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Textual Analysis and Variable Computation</h1>
+ <h1>Textual Analysis and Variable Computation</h1>
     <p>This project extracts textual data from articles provided in a given Excel file of URLs, performs text analysis to compute various linguistic variables, and saves the results to an output Excel file.</p>
     <h2>Description</h2>
     <h3>Data Extraction</h3>
