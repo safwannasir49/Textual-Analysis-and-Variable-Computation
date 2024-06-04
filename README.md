@@ -3,56 +3,111 @@
 </h1>
 
 # Textual Analysis and Variable Computation
-This project extracts textual data from articles provided in a given Excel file of URLs, performs text analysis to compute various linguistic variables, and saves the results to an output Excel file.
-
-Description
-Data Extraction
-The project reads a list of URLs from an Input.xlsx file, extracts the article's title and main text from each URL using web scraping techniques, and saves the extracted text into separate .txt files named after their respective URL IDs. Only the article's title and main body text are extracted, excluding any headers, footers, or ads.
-
-Text Analysis
-After extracting the text, the project performs several text analysis tasks including:
-
-Tokenization and Preprocessing: The text is tokenized into words and sentences, converted to lowercase, and stripped of punctuation and stop words.
-Sentiment Analysis: Using the VADER sentiment analysis tool, the project computes sentiment scores including positive, negative, and polarity scores.
-Linguistic Metrics: Various linguistic metrics are computed such as:
-Positive Score
-Negative Score
-Polarity Score
-Subjectivity Score
-Average Sentence Length
-Percentage of Complex Words
-Fog Index
-Average Number of Words per Sentence
-Complex Word Count
-Word Count
-Syllable per Word
-Personal Pronouns Count
-Average Word Length
-Output
-The computed variables are saved in an Output.xlsx file with the following columns:
-
-URL_ID
-Positive_Score
-Negative_Score
-Polarity_Score
-Subjectivity_Score
-Avg_Sentence_Length
-Percentage_of_Complex_Words
-Fog_Index
-Avg_Number_of_Words_Per_Sentence
-Complex_Word_Count
-Word_Count
-Syllable_Per_Word
-Personal_Pronouns
-Avg_Word_Length
-Python Libraries and Packages Used
-pandas: For reading and writing Excel files, and handling data in DataFrame format.
-nltk (Natural Language Toolkit): For text processing, including tokenization, stopwords removal, and sentiment analysis.
-requests: For making HTTP requests to fetch web page content.
-beautifulsoup4: For parsing HTML content and extracting article text.
-openpyxl: For working with Excel files.
-Installation
-
-To install the required Python libraries, use the following pip command:
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textual Analysis and Variable Computation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .code-block {
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Textual Analysis and Variable Computation</h1>
+    <p>This project extracts textual data from articles provided in a given Excel file of URLs, performs text analysis to compute various linguistic variables, and saves the results to an output Excel file.</p>
+    <h2>Description</h2>
+    <h3>Data Extraction</h3>
+    <p>The project reads a list of URLs from an <code>Input.xlsx</code> file, extracts the article's title and main text from each URL using web scraping techniques, and saves the extracted text into separate <code>.txt</code> files named after their respective URL IDs. Only the article's title and main body text are extracted, excluding any headers, footers, or ads.</p>
+    <h3>Text Analysis</h3>
+    <p>After extracting the text, the project performs several text analysis tasks including:</p>
+    <ul>
+        <li><strong>Tokenization and Preprocessing:</strong> The text is tokenized into words and sentences, converted to lowercase, and stripped of punctuation and stop words.</li>
+        <li><strong>Sentiment Analysis:</strong> Using the VADER sentiment analysis tool, the project computes sentiment scores including positive, negative, and polarity scores.</li>
+        <li><strong>Linguistic Metrics:</strong> Various linguistic metrics are computed such as:
+            <ul>
+                <li>Positive Score</li>
+                <li>Negative Score</li>
+                <li>Polarity Score</li>
+                <li>Subjectivity Score</li>
+                <li>Average Sentence Length</li>
+                <li>Percentage of Complex Words</li>
+                <li>Fog Index</li>
+                <li>Average Number of Words per Sentence</li>
+                <li>Complex Word Count</li>
+                <li>Word Count</li>
+                <li>Syllable per Word</li>
+                <li>Personal Pronouns Count</li>
+                <li>Average Word Length</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Output</h3>
+    <p>The computed variables are saved in an <code>Output.xlsx</code> file with the following columns:</p>
+    <ul>
+        <li>URL_ID</li>
+        <li>Positive_Score</li>
+        <li>Negative_Score</li>
+        <li>Polarity_Score</li>
+        <li>Subjectivity_Score</li>
+        <li>Avg_Sentence_Length</li>
+        <li>Percentage_of_Complex_Words</li>
+        <li>Fog_Index</li>
+        <li>Avg_Number_of_Words_Per_Sentence</li>
+        <li>Complex_Word_Count</li>
+        <li>Word_Count</li>
+        <li>Syllable_Per_Word</li>
+        <li>Personal_Pronouns</li>
+        <li>Avg_Word_Length</li>
+    </ul>
+    <h3>Python Libraries and Packages Used</h3>
+    <ul>
+        <li><strong>pandas:</strong> For reading and writing Excel files, and handling data in DataFrame format.</li>
+        <li><strong>nltk (Natural Language Toolkit):</strong> For text processing, including tokenization, stopwords removal, and sentiment analysis.</li>
+        <li><strong>requests:</strong> For making HTTP requests to fetch web page content.</li>
+        <li><strong>beautifulsoup4:</strong> For parsing HTML content and extracting article text.</li>
+        <li><strong>openpyxl:</strong> For working with Excel files.</li>
+    </ul>
+    <h2>Installation</h2>
+    <p>To install the required Python libraries, use the following pip command:</p>
+    <pre class="code-block">
 pip install pandas nltk requests beautifulsoup4 openpyxl
+    </pre>
+    <p>Additionally, download the necessary NLTK resources:</p>
+    <pre class="code-block">
+import nltk
+
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('vader_lexicon')
+    </pre>
+</body>
+</html>
