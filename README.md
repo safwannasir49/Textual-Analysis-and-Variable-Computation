@@ -75,14 +75,16 @@ nltk.download('vader_lexicon')
 # Installation
 <h2>Cloning the Repository</h2>
 <p>To clone the repository, run the following command:</p>
-git clone https://github.com/safwannasir49/Textual-Analysis-and-Variable-Computation.git
-cd your_repository
+<pre><code>git clone https://github.com/safwannasir49/Textual-Analysis-and-Variable-Computation.git
+cd Textual-Analysis-and-Variable-Computation</code></pre>
+
 <h2>Installing Python Dependencies</h2>
 <p>To install the required Python libraries, use the following pip command:</p>
-pip install pandas nltk requests beautifulsoup4 openpyxl
-<p>Additionally, download the necessary NLTK resources:</p>
-import nltk
+<pre><code>pip install pandas nltk requests beautifulsoup4 openpyxl</code></pre>
+
+<p>Additionally, download the necessary NLTK resources by running the following code in your Python environment:</p>
+<pre><code>import nltk
 
 nltk.download('punkt')
 nltk.download('stopwords')
-nltk.download('vader_lexicon')
+nltk.download('vader_lexicon')</code></pre>
