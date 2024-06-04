@@ -2,7 +2,6 @@
     <img src="https://readme-typing-svg.herokuapp.com?font=Sedan+SC&pause=1000&color=73AEF7&center=true&random=false&width=500&height=80&lines=Hello+!"/>
 </h1>
 
-# Textual Analysis and Variable Computation
  <h1>Textual Analysis and Variable Computation</h1>
     <p>This project extracts textual data from articles provided in a given Excel file of URLs, performs text analysis to compute various linguistic variables, and saves the results to an output Excel file.</p>
     <h2>Description</h2>
