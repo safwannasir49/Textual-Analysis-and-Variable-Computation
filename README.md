@@ -75,8 +75,7 @@ nltk.download('vader_lexicon')
 # Installation
 <h2>Cloning the Repository</h2>
 <p>To clone the repository, run the following command:</p>
-<pre><code>git clone https://github.com/safwannasir49/Textual-Analysis-and-Variable-Computation.git
-cd Textual-Analysis-and-Variable-Computation</code></pre>
+<pre><code>git clone https://github.com/safwannasir49/Textual-Analysis-and-Variable-Computation.git</code></pre>
 
 <h2>Installing Python Dependencies</h2>
 <p>To install the required Python libraries, use the following pip command:</p>
